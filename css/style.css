@@ -111,8 +111,19 @@ nav ul li a:hover {
     margin-left: 10px ;
 }
 
+.filtres-title {
+    padding-right: 20px;
+}
 
+/* Informations */
 
+.informations {
+    display: flex;
+    align-items: center;
+}
+ .i-icon {
+    padding-right: 20px;
+ }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
