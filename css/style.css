@@ -28,6 +28,8 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    width: 31%;
+    
 }
 
 .section-title {
@@ -140,7 +142,8 @@ nav ul li a:hover {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 62%;
+    width: 65%;
+
 }
 
 .hebergements-title {
@@ -192,6 +195,7 @@ nav ul li a:hover {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
