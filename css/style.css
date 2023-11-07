@@ -348,6 +348,27 @@ nav ul li a:hover {
     width: 23.5%;
 }
 
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    padding: 20px 230px 20px 40px ;
+}
+
+.footer-list-container h4 {
+    margin: 0;
+}
+
+.footer-list-container ul {
+    text-align: left;
+    padding-left: 0;
+}
+.footer-list-container li {
+    list-style: none;
+    margin: 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
