@@ -75,7 +75,7 @@ nav {
 }
 
 .navbar-items {
-    margin-left: 60px;
+    margin-left: 68px;
     color: black;
 }
 
@@ -84,7 +84,7 @@ li {
 }
 
 .logo {
-    height: 20px;
+    height: 19px;
     padding-top: 20px;
 }
 
@@ -93,13 +93,23 @@ nav ul li a:hover {
     padding-top: 21px;
     color: #0065FC;
 }
+/* Info-group */
 
-/* filtres */
+.headline,.Search-bar,.filters-container,.informations {
+    margin: 0;
+    padding: 0;
+}
+
+.Info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+/* form */
 .search-form {
     display: flex;
     position: relative;
     height: 50px;
-    margin-top: 20px;
     width: 30%;
 }
 
@@ -122,6 +132,7 @@ nav ul li a:hover {
     border-radius: 15px;
     border: 2px solid #F2F2F2;
     font-weight: bold;
+
 }
 
 .submit-input {
@@ -134,8 +145,14 @@ nav ul li a:hover {
     padding-right: 20px;
     color: white;
     font-weight: bold;
+    border-style: none;
 }
 
+input::placeholder {
+    color: black;
+}
+
+/* filters */
 
 .filters-container {
     display: flex;
@@ -145,7 +162,7 @@ nav ul li a:hover {
 .filters {
     display: flex;
     align-items: center;
-    border: #e0e0e0 3px solid;
+    border: #F2F2F2 1px solid;
     border-radius: 40px;
     padding: 10px;
     margin-right: 15px;
@@ -158,7 +175,9 @@ nav ul li a:hover {
 
 .filters-text {
     margin-left: 10px ;
+    font-weight: bold;
 }
+
 
 .filtres-title {
     padding-right: 20px;
@@ -210,7 +229,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 33px;
+    margin-bottom: 33px;
+    overflow: hidden;
 }
 
 .hebergements-cards img {
@@ -250,6 +270,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 20px;
 
 }
 
@@ -312,6 +333,8 @@ nav ul li a:hover {
 .activities-cards {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+
 }
 .activities-title {
     display: flex;
@@ -323,13 +346,12 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
     padding: 0px;
 }
 
 .activities-cards img {
     width: 100%;
-    height: 400px;
+    height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
