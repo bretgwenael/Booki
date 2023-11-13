@@ -127,7 +127,7 @@ nav ul li a:hover {
 .search-input {
     width: 100%;
     height: 100%;
-    padding-left: 20%;
+    padding-left: 18%;
     padding-right: 40%; 
     border-radius: 15px;
     border: 2px solid #F2F2F2;
@@ -148,6 +148,10 @@ nav ul li a:hover {
     border-style: none;
 }
 
+.glass-input {
+    opacity: 0;
+}
+
 input::placeholder {
     color: black;
 }
@@ -162,7 +166,7 @@ input::placeholder {
 .filters {
     display: flex;
     align-items: center;
-    border: #F2F2F2 1px solid;
+    border: #F2F2F2 3px solid;
     border-radius: 40px;
     padding: 10px;
     margin-right: 15px;
@@ -435,10 +439,53 @@ input::placeholder {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+
+    /* filtres */
+
+    .filtres-title {
+        width: 100%;
+    }
+
+    .filters-container {
+        flex-wrap: wrap;
+    }
+
+    .filters {
+        margin-top: 15px;
+    }
+
+
+    }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    /* header */
+
+    header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .navbar-items {
+    
+    }
+
+    .branding {
+        width: 100%;
+    }
+
+    nav ul li a:hover {
+        border-bottom :#0065FC solid;
+        border-top: none;
+        padding-bottom: 21px; 
+        color: #0065FC;
+    }
+    
     /* Loupe */
     .submit-input {
         display: none;
@@ -453,9 +500,17 @@ input::placeholder {
         height: 100%;
         width: 13%;
         border-style: none;
+        opacity: 1;
     }
     
     .fa-magnifying-glass {
         color: white;
     }
+
+    /* filters */
+
+    .filters {
+        justify-content: space-between;
+    }
+
 }
